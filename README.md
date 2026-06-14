@@ -59,3 +59,6 @@ Se aprovecha el comportamiento FIFO de la cola y LIFO de la pila para comparar c
 **Salida de consola:**
 
 ![alt text](<Captura de pantalla 2026-06-14 091859.png>)
+
+**Url**
+https://github.com/marcamichelle1209-arch/icc-est-u2-EstructurasLineales-Pilas-y-Colas/releases/tag/v2.0.2

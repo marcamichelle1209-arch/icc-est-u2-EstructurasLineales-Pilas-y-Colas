@@ -1,15 +1,16 @@
 package utils;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 public class QueuePalindrome {
     
     public boolean isPalindrome(String text){
-      text = text.replaceAll("\\text +", "").toLowerCase();
+      Queue<Character> queue = new LinkedList<>();
         
-      
-        java.util.Queue<Character> queue = new java.util.LinkedList<>();
-        java.util.Stack<Character> stack = new java.util.Stack<>();
-        
-   
+      Stack<Character> stack = new Stack<>();
+    
         for (char c : text.toCharArray()) {
             queue.add(c);
             stack.push(c);
@@ -17,7 +18,7 @@ public class QueuePalindrome {
         
     
         while (!queue.isEmpty()) {
-            if (queue.poll() != stack.pop()) {
+            if (!queue.poll().equals(stack.pop())) {
                 return false; 
             }
         }

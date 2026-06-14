@@ -36,15 +36,15 @@ public class App {
 
         sorter.sortStack(stack);
         System.out.println("Stack ordenado: "+ stack);
-        System.out.println("Toper esperado:" + stack.peek());
+        System.out.println("Toper esperado: " + stack.peek());
 
     }
     private static void runQueuePalindrome(){
         QueuePalindrome queuePalindrome = new QueuePalindrome();
-        System.out.println("\n Ejercicio 3: Palindrome usando Colas");
-        System.out.println("ana | Resultado:" + queuePalindrome.isPalindrome("ana"));
-        System.out.println("radar | Resultado:" + queuePalindrome.isPalindrome("radar"));
-        System.out.println("java | Resultado:" + queuePalindrome.isPalindrome("java"));
+        System.out.println("\nEjercicio 3: Palindrome usando Colas");
+        System.out.println("ana   | Resultado: " + queuePalindrome.isPalindrome("ana"));
+        System.out.println("radar | Resultado: " + queuePalindrome.isPalindrome("radar"));
+        System.out.println("java  | Resultado: " + queuePalindrome.isPalindrome("java"));
         
     }
 }

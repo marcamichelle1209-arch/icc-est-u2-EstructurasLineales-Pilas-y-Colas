@@ -5,12 +5,12 @@ import java.util.Stack;
 public class StackSorter{
     
     public void sortStack(Stack<Integer> stack){
-       Stack<Integer> temIntegers = new Stack<>();
+       Stack<Integer> tempStack = new Stack<>();
         while (!stack.isEmpty()) {
             int temp = stack.pop();
             
-            while (!temp Stack.isEmpty() && tempStack.peek() > temp) {
-                stack.push(temp Stack.pop());
+            while (!tempStack.isEmpty() && tempStack.peek() > temp) {
+                stack.push(tempStack.pop());
             }
             
             tempStack.push(temp);
